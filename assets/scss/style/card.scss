@@ -1,0 +1,25 @@
+.card{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e5e5;
+
+    img{
+        height: 96px;
+        border-radius: 50%;
+        margin-bottom: 20px
+    }
+
+}
+
+.card-container{
+    @include grids;
+    margin: 3em 15%;
+    gap: 2em;
+    :hover{
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+}

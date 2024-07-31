@@ -1,0 +1,251 @@
+/* Your custom css code goes here */
+footer {
+  background-color: darkblue;
+}
+footer a {
+  color: white;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+.footer-row-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-row {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e6e5e5;
+}
+.card img {
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 3em 15%;
+  gap: 2em;
+}
+.card-container :hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input, textarea {
+  height: 46px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input :active, textarea :active {
+  border: 1px solid #6a41ed;
+}
+
+body {
+  color: black;
+  background-color: #EFF0F4;
+  margin: 0 10%;
+}
+
+.wrap {
+  background-color: #fff;
+}
+
+.blink-bg {
+  color: rgb(245, 30, 30);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  animation: blinkingBackground 2s infinite;
+}
+
+.blink-bg a {
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+}
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: #10c018;
+  }
+  25% {
+    background-color: #1056c0;
+  }
+  50% {
+    background-color: #ef0a1a;
+  }
+  75% {
+    background-color: #254878;
+  }
+  100% {
+    background-color: #04a1d5;
+  }
+}
+.background-w {
+  background-color: #fff;
+}
+
+.top-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.gap-p {
+  display: grid;
+  row-gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.content i {
+  color: var(--red);
+}
+
+.header {
+  background-color: #e1131a;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 3em;
+}
+.header h1 {
+  color: white;
+  font-weight: bold;
+}
+.header a {
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  gap: 2px;
+}
+
+.social-media img {
+  height: 25px;
+  width: auto;
+}
+
+.icon-hover {
+  position: fixed;
+  left: 0;
+  top: 160px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.icon-hover img {
+  padding: 3px 5px 3px 2em;
+  height: 50px;
+}
+
+.main-position {
+  position: relative;
+}
+
+.main-position img {
+  opacity: 0.7;
+}
+
+.content-position {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  gap: 1em;
+  color: black;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.header-title {
+  background-color: #6a41ed;
+  padding: 5em 10em;
+}
+.header-title h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0 2%;
+  }
+  .top-header {
+    flex-direction: column-reverse;
+    padding: 1em 0;
+    gap: 1em;
+  }
+  .content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .header {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

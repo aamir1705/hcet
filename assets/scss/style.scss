@@ -1,0 +1,202 @@
+/* Your custom css code goes here */
+
+$white :#fff;
+$red: #e1131a;
+$main-backgorund-color:#EFF0F4;
+$blue:#6a41ed;
+
+@import 'style/mixin';
+@import 'style/footer';
+@import 'style/links';
+@import 'style/card';
+@import 'style/form';
+
+body {
+  color: black;
+  background-color: $main-backgorund-color;
+  margin: 0 10%;
+}
+
+.wrap{
+  background-color: $white;
+}
+
+.blink-bg {
+  color: rgb(245, 30, 30);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  animation: blinkingBackground 2s infinite;
+}
+
+.blink-bg a {
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+}
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: #10c018;
+  }
+
+  25% {
+    background-color: #1056c0;
+  }
+
+  50% {
+    background-color: #ef0a1a;
+  }
+
+  75% {
+    background-color: #254878;
+  }
+
+  100% {
+    background-color: #04a1d5;
+  }
+}
+
+.background-w {
+  background-color: $white;
+}
+
+.top-header {
+  background-color:$white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.gap-p {
+  display: grid;
+  row-gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.content i {
+  color: var(--red);
+}
+
+.header {
+  background-color: $red;
+  color: $white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 3em;
+  h1{
+    color: white;
+    font-weight: bold;
+  }
+  a{
+    color: black;
+  }
+}
+
+
+.social-media {
+  display: flex;
+  gap: 2px;
+
+}
+
+.social-media img {
+  height: 25px;
+  width: auto;
+}
+
+.icon-hover {
+  position: fixed;
+  left: 0;
+  top: 160px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.icon-hover img {
+  padding: 3px 5px 3px 2em;
+  height: 50px;
+}
+
+.main-position {
+  position: relative;
+}
+
+.main-position img {
+  opacity: 0.7;
+}
+
+.content-position {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+
+}
+ul{
+  list-style: none;
+}
+.navbar{
+  display: flex;
+  gap: 1em;
+  color: black;
+
+  background-color: $white;
+  padding: 1em;
+}
+.dropdown{
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header-title{
+  background-color: $blue;
+  padding: 5em 10em;
+  h1{
+    font-size: 3em;
+    color: white;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body{
+    margin: 0 2%;
+  }
+  .top-header {
+    flex-direction: column-reverse;
+    padding: 1em 0;
+    gap: 1em;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
